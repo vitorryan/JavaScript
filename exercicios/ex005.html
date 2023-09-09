@@ -17,14 +17,23 @@
     <p>Aqui vai ser o resultado</p>
     <p>aprendendo a usar <strong>DOM</strong> em JS</p>
     <div id="msg">Clique aqui</div>
+    <p name="nome">Pegando elemento por nome </p>
+    <p>Pegando elemento por Classe</p>
+    <p>Pegando elemento por Seletor</p>
     
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]
-        window.document.write('Esta escrito assim: ' + p1.innerText)
+        window.document.write('Esta escrito assim: ' + p1.innerText) //innerText (O texto que está dentro)
         p1.style.color = 'red'
 
         var d = window.document.getElementById('msg')
         d.style.background = 'green'
+
+        var n = window.document.getElementsByName('nome')
+        
+
+
+
     </script>
 </body>
 </html>
